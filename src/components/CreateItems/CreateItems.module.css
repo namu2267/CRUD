@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 0.5rem;
+  align-items: center;
+  background-color: gray;
+  border-bottom: 1px solid bisque;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+input {
+  height: 45px;
+  border-radius: 1rem;
+}
+
+button {
+  border-radius: 0.5rem;
+}
