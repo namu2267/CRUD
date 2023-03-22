@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import ItemList from "./components/ItemList";
 import CreateItems from "./components/CreateItems/CreateItems";
+import { FiShoppingCart } from "react-icons/fi";
 import "./App.css";
+import ItemList from "./components/ItemList/ItemList";
 
 function App() {
   const [inputs, setInputs] = useState({
@@ -51,7 +52,12 @@ function App() {
 
   return (
     <div className="container">
+      <h2>
+        shopping basket
+        <FiShoppingCart />
+      </h2>
       <CreateItems
+        items={items}
         itemName={itemName}
         amount={amount}
         onChange={onChange}

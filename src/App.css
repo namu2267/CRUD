@@ -15,13 +15,15 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  accent-color: var(--color-accent);
+
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(114, 114, 227, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
   );
 }
 
@@ -42,4 +44,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h2 {
+  display: flex;
+  justify-content: space-around;
 }

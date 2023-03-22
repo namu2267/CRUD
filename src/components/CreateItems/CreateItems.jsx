@@ -17,7 +17,9 @@ export default function CreateItems({ itemName, amount, onChange, onCreate }) {
         value={amount}
         onChange={onChange}
       />
-      <button onClick={() => onCreate(uuidv4())}> 추가하기</button>
+      <button className={styles.btnHover} onClick={() => onCreate(uuidv4())}>
+        ADD
+      </button>
     </header>
   );
 }
